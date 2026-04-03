@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/employee-payroll-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/employee-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/eureka-naming-server" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/role-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spring-cloud-config-server" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spring-security-app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spring-security-ldap-app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/zipkin-tracing" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/zuul-edge-server" vcs="Git" />
+  </component>
+</project>
