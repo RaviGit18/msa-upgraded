@@ -1,0 +1,27 @@
+[submodule "employee-service"]
+	path = employee-service
+	url = git@github.com:RaviGit18/employee-service.git
+[submodule "employee-payroll-service"]
+	path = employee-payroll-service
+	url = git@github.com:RaviGit18/employee-payroll-service.git
+[submodule "eureka-naming-server"]
+	path = eureka-naming-server
+	url = git@github.com:RaviGit18/eureka-naming-server.git
+[submodule "role-service"]
+	path = role-service
+	url = git@github.com:RaviGit18/role-service.git
+[submodule "spring-cloud-config-server"]
+	path = spring-cloud-config-server
+	url = git@github.com:RaviGit18/spring-cloud-config-server.git
+[submodule "spring-security-app"]
+	path = spring-security-app
+	url = git@github.com:RaviGit18/spring-security-app.git
+[submodule "spring-security-ldap-app"]
+	path = spring-security-ldap-app
+	url = git@github.com:RaviGit18/spring-security-ldap-app.git
+[submodule "zipkin-tracing"]
+	path = zipkin-tracing
+	url = git@github.com:RaviGit18/zipkin-tracing.git
+[submodule "zuul-edge-server"]
+	path = zuul-edge-server
+	url = git@github.com:RaviGit18/zuul-edge-server.git
