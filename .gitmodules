@@ -13,12 +13,6 @@
 [submodule "spring-cloud-config-server"]
 	path = spring-cloud-config-server
 	url = git@github.com:RaviGit18/spring-cloud-config-server.git
-[submodule "spring-security-app"]
-	path = spring-security-app
-	url = git@github.com:RaviGit18/spring-security-app.git
-[submodule "spring-security-ldap-app"]
-	path = spring-security-ldap-app
-	url = git@github.com:RaviGit18/spring-security-ldap-app.git
 [submodule "zipkin-tracing"]
 	path = zipkin-tracing
 	url = git@github.com:RaviGit18/zipkin-tracing.git
