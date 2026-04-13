@@ -8,6 +8,10 @@ This project demonstrates a complete microservices ecosystem with service discov
 
 ## Architecture Components
 
+### Microservices Architecture Flow Diagram
+
+<img width="1702" height="932" alt="image" src="https://github.com/user-attachments/assets/e31a213f-c1b4-4d0a-aa23-aa597f62221e" />
+
 ### Core Services
 - **Employee Service** - Manages employee information and operations
 - **Employee Payroll Service** - Handles payroll calculations and management
@@ -32,6 +36,10 @@ This project demonstrates a complete microservices ecosystem with service discov
 - **Micrometer Tracing** - Distributed tracing
 - **Spring Security** - Authentication and authorization
 
+### Technology Stack Diagram
+
+<img width="1306" height="616" alt="image" src="https://github.com/user-attachments/assets/8ab7038d-0e28-469b-ab49-e7bd5f828e23" />
+
 ## Project Structure
 
 ```
@@ -46,6 +54,10 @@ msa-upgraded/
 ├── micrometer-tracing/               # Distributed tracing server
 └── spring-cloud-gateway-server/      # API gateway
 ```
+
+### Data Flow Diagram
+
+<img width="921" height="910" alt="image" src="https://github.com/user-attachments/assets/6499adb7-7cf2-458e-968e-1fef1606b944" />
 
 ## Quick Start
 
@@ -67,6 +79,7 @@ mvn clean install -DskipTests
 ```
 
 ### Running Services
+<img width="1103" height="131" alt="image" src="https://github.com/user-attachments/assets/c52a9d19-bf12-47e7-8b31-51d78498d410" />
 
 1. **Start Infrastructure Services** (in order):
    ```bash
