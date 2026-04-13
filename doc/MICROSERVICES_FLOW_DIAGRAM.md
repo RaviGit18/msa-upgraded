@@ -1,23 +1,3 @@
 # Microservices Architecture Flow Diagram
 
-## Improved Architecture Diagrams
-
-```
-      +-----------------------------------------+    
-      |                 Service A               |    
-      |               +---------------------+   |    
-      |  <<Interface>> |     Service B      |   |    
-      |               +---------------------+   |    
-      |                     ^                   |    
-      |                     |                   |    
-      |               +---------------------+   |    
-      |  <<Interface>> |     Service C      |   |    
-      |               +---------------------+   |    
-      +-----------------------------------------+    
-```
-
----
-
-## Original Content
-
-(Keep original content from lines 101-408 here)
+<img width="1702" height="932" alt="image" src="https://github.com/user-attachments/assets/e31a213f-c1b4-4d0a-aa23-aa597f62221e" />
