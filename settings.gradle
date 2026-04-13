@@ -1,0 +1,9 @@
+rootProject.name = 'msa-upgraded'
+
+include 'employee-payroll-service'
+include 'employee-service'
+include 'eureka-naming-server'
+include 'role-service'
+include 'spring-cloud-config-server'
+include 'micrometer-tracing'
+include 'spring-cloud-gateway-server'

@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: E:\\msa_case_study
+
+server:
+  port: 8888

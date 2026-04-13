@@ -25,7 +25,7 @@ This project demonstrates a complete microservices ecosystem with service discov
 - **Java 8**
 - **Spring Boot 1.5.2.RELEASE**
 - **Spring Cloud Dalston.RELEASE**
-- **Maven** - Build tool and dependency management
+- **Gradle** - Build tool and dependency management
 - **H2 Database** - In-memory database for development
 - **Eureka** - Service discovery
 - **Spring Cloud Gateway** - API gateway
@@ -50,20 +50,20 @@ msa-upgraded/
 ## Quick Start
 
 ### Prerequisites
-- Java 8 or higher
-- Maven 3.3 or higher
+- Java 17 or higher
+- Gradle 8.0 or higher (or use provided wrapper)
 
 ### Building the Project
 
 ```bash
 # Build all modules
-mvn clean install
+./gradlew clean build
 
 # Build specific module
-mvn clean install -pl employee-service
+./gradlew :employee-service:clean :employee-service:build
 
 # Skip tests during build
-mvn clean install -DskipTests
+./gradlew clean build -x test
 ```
 
 ### Running Services
@@ -72,36 +72,36 @@ mvn clean install -DskipTests
    ```bash
    # Start Eureka Server
    cd eureka-naming-server
-   mvn spring-boot:run
+   ../gradlew bootRun
    
    # Start Config Server
    cd ../spring-cloud-config-server
-   mvn spring-boot:run
+   ../gradlew bootRun
    
    # Start Tracing (optional)
    cd ../micrometer-tracing
-   mvn spring-boot:run
+   ../gradlew bootRun
    ```
 
 2. **Start Business Services**:
    ```bash
    # Start Employee Service
    cd ../employee-service
-   mvn spring-boot:run
+   ../gradlew bootRun
    
    # Start Payroll Service
    cd ../employee-payroll-service
-   mvn spring-boot:run
+   ../gradlew bootRun
    
    # Start Role Service
    cd ../role-service
-   mvn spring-boot:run
+   ../gradlew bootRun
    ```
 
 3. **Start Gateway**:
    ```bash
    cd ../spring-cloud-gateway-server
-   mvn spring-boot:run
+   ../gradlew bootRun
    ```
 
 ### Service Endpoints
@@ -135,13 +135,13 @@ Default credentials:
 
 ```bash
 # Run all tests
-mvn test
+./gradlew test
 
 # Run tests for specific module
-mvn test -pl employee-service
+./gradlew :employee-service:test
 
 # Run integration tests
-mvn verify
+./gradlew check
 ```
 
 ## Monitoring and Tracing

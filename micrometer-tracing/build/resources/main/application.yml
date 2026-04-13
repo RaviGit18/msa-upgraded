@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: micrometer-tracing
+
+server:
+  port: 9411

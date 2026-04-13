@@ -7,7 +7,7 @@ This guide provides detailed instructions for running and testing the MSA-Upgrad
 
 ### System Requirements
 - **Java 17+** (required for Spring Boot 3.x)
-- **Maven 3.6+** (for building the project)
+- **Gradle 8.0+** (for building the project, or use provided wrapper)
 - **Git** (for version control)
 - **Modern IDE** (IntelliJ IDEA, VS Code, or Eclipse)
 
@@ -16,8 +16,8 @@ This guide provides detailed instructions for running and testing the MSA-Upgrad
 # Verify Java version
 java -version
 
-# Verify Maven version
-mvn -version
+# Verify Gradle version
+./gradlew --version
 
 # Verify Git version
 git --version
@@ -67,19 +67,19 @@ dir /B
 # └── micrometer-tracing/
 ```
 
-#### 2. Maven Dependencies Check
+#### 2. Gradle Dependencies Check
 ```bash
 # Clean and compile the entire project
-mvn clean compile
+./gradlew clean compileJava
 
 # Check for any compilation errors
-mvn dependency:tree
+./gradlew dependencies
 ```
 
 #### 3. Configuration Files Validation
-Verify all `application.properties` files exist:
+Verify all `application.yml` files exist:
 ```bash
-dir /S application.properties
+dir /S application.yml
 ```
 
 #### 4. Database Setup
@@ -137,7 +137,7 @@ Starting Employee Payroll Service before Employee/Role services will cause:
 
 ```bash
 cd E:\learning\workspaces\workspaces-0\msa-upgraded\eureka-naming-server
-mvn spring-boot:run
+../gradlew bootRun
 ```
 
 **Expected Output:**
@@ -166,7 +166,7 @@ curl http://localhost:8761
 
 ```bash
 cd E:\learning\workspaces\workspaces-0\msa-upgraded\spring-cloud-config-server
-mvn spring-boot:run
+../gradlew bootRun
 ```
 
 **Expected Output:**
@@ -194,7 +194,7 @@ curl http://localhost:8888/actuator/health
 
 ```bash
 cd E:\learning\workspaces\workspaces-0\msa-upgraded\employee-service
-mvn spring-boot:run
+../gradlew bootRun
 ```
 
 **Expected Output:**
@@ -226,7 +226,7 @@ curl http://localhost:8080/employee/1000
 
 ```bash
 cd E:\learning\workspaces\workspaces-0\msa-upgraded\role-service
-mvn spring-boot:run
+../gradlew bootRun
 ```
 
 **Expected Output:**
@@ -255,7 +255,7 @@ curl http://localhost:8081/role/Dev
 
 ```bash
 cd E:\learning\workspaces\workspaces-0\msa-upgraded\employee-payroll-service
-mvn spring-boot:run
+../gradlew bootRun
 ```
 
 **Expected Output:**
@@ -284,7 +284,7 @@ curl -X POST http://localhost:8082/employee/1000/role/Dev
 
 ```bash
 cd E:\learning\workspaces\workspaces-0\msa-upgraded\spring-cloud-gateway-server
-mvn spring-boot:run
+../gradlew bootRun
 ```
 
 **Expected Output:**
@@ -455,22 +455,22 @@ spring.config.import=optional:configserver:http://localhost:8888
 ### All Services (Sequential)
 ```bash
 # Terminal 1 - Eureka
-cd eureka-naming-server && mvn spring-boot:run
+cd eureka-naming-server && ../gradlew bootRun
 
 # Terminal 2 - Config Server
-cd spring-cloud-config-server && mvn spring-boot:run
+cd spring-cloud-config-server && ../gradlew bootRun
 
 # Terminal 3 - Employee Service
-cd employee-service && mvn spring-boot:run
+cd employee-service && ../gradlew bootRun
 
 # Terminal 4 - Role Service
-cd role-service && mvn spring-boot:run
+cd role-service && ../gradlew bootRun
 
 # Terminal 5 - Payroll Service
-cd employee-payroll-service && mvn spring-boot:run
+cd employee-payroll-service && ../gradlew bootRun
 
 # Terminal 6 - Gateway
-cd spring-cloud-gateway-server && mvn spring-boot:run
+cd spring-cloud-gateway-server && ../gradlew bootRun
 ```
 
 ### Health Check Script
