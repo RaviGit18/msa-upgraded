@@ -77,6 +77,7 @@ msa-upgraded/
 ```
 
 ### Running Services
+<img width="1103" height="131" alt="image" src="https://github.com/user-attachments/assets/c52a9d19-bf12-47e7-8b31-51d78498d410" />
 
 1. **Start Infrastructure Services** (in order):
    ```bash
