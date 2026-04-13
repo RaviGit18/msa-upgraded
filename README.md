@@ -1,4 +1,4 @@
-# Microservices Architecture (MSA) Project
+# Microservices Architecture (MSA-Upgraded) Project
 
 A comprehensive microservices architecture implementation using Spring Boot, Spring Cloud, and related technologies.
 
@@ -19,9 +19,6 @@ This project demonstrates a complete microservices ecosystem with service discov
 - **Spring Cloud Gateway Server** - API gateway for routing and load balancing
 - **Micrometer Tracing** - Distributed tracing and monitoring
 
-### Security Services
-- **Spring Security App** - Basic authentication and authorization
-- **Spring Security LDAP App** - LDAP-based authentication
 
 ## Technology Stack
 
@@ -38,7 +35,7 @@ This project demonstrates a complete microservices ecosystem with service discov
 ## Project Structure
 
 ```
-msa/
+msa-upgraded/
 ├── pom.xml                           # Parent POM with common configuration
 ├── README.md                         # This file
 ├── employee-payroll-service/         # Payroll management service
@@ -46,8 +43,6 @@ msa/
 ├── eureka-naming-server/             # Service discovery server
 ├── role-service/                     # Role management service
 ├── spring-cloud-config-server/       # Configuration server
-├── spring-security-app/              # Basic security implementation
-├── spring-security-ldap-app/         # LDAP security implementation
 ├── micrometer-tracing/               # Distributed tracing server
 └── spring-cloud-gateway-server/      # API gateway
 ```

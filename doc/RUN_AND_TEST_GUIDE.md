@@ -1,7 +1,7 @@
-# MSA Project - Step-by-Step Run and Test Guide
+# MSA-Upgraded Project - Step-by-Step Run and Test Guide
 
 ## Overview
-This guide provides detailed instructions for running and testing the upgraded microservices project with Spring Boot 3.2.5, modern dependencies, and Swagger documentation.
+This guide provides detailed instructions for running and testing the MSA-Upgraded project with Spring Boot 3.2.5, modern dependencies, and Swagger documentation.
 
 ## Prerequisites
 

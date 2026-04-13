@@ -1,6 +1,6 @@
 # Eureka Naming Server
 
-Service discovery and registration server for the MSA microservices ecosystem.
+Service discovery and registration server for the MSA-Upgraded microservices ecosystem.
 
 ## Overview
 

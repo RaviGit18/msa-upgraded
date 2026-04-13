@@ -1,6 +1,6 @@
 # Employee Payroll Service
 
-A microservice for managing payroll calculations and employee compensation within the MSA ecosystem.
+A microservice for managing payroll calculations and employee compensation within the MSA-Upgraded ecosystem.
 
 ## Overview
 

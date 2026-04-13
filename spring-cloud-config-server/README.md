@@ -1,6 +1,6 @@
 # Spring Cloud Config Server
 
-Centralized configuration management server for the MSA microservices ecosystem.
+Centralized configuration management server for the MSA-Upgraded microservices ecosystem.
 
 ## Overview
 

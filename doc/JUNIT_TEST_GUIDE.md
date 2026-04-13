@@ -1,7 +1,7 @@
 # JUnit Test Cases with Mockito - Complete Guide
 
 ## Overview
-This document provides comprehensive JUnit 5 test cases with Mockito for all microservices in the upgraded MSA project. Tests cover controllers, services, repositories, and integration scenarios.
+This document provides comprehensive JUnit 5 test cases with Mockito for all microservices in the MSA-Upgraded project. Tests cover controllers, services, repositories, and integration scenarios.
 
 ## Test Structure
 
@@ -554,4 +554,4 @@ This comprehensive test suite provides:
 - Reusable test data builders
 - Organized test structure
 
-These tests ensure the reliability and correctness of all microservices in the upgraded MSA project.
+These tests ensure the reliability and correctness of all microservices in the MSA-Upgraded project.

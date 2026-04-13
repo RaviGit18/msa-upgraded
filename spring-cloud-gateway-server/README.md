@@ -1,6 +1,6 @@
 # Spring Cloud Gateway Server
 
-API Gateway server providing routing, load balancing, and cross-cutting concerns for the MSA microservices ecosystem.
+API Gateway server providing routing, load balancing, and cross-cutting concerns for the MSA-Upgraded microservices ecosystem.
 
 ## Overview
 

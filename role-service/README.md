@@ -1,6 +1,6 @@
 # Role Service
 
-A microservice for managing user roles and permissions within the MSA ecosystem.
+A microservice for managing user roles and permissions within the MSA-Upgraded ecosystem.
 
 ## Overview
 

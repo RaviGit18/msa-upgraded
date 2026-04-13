@@ -1,6 +1,6 @@
 # Micrometer Tracing
 
-Distributed tracing server for monitoring and troubleshooting microservices in the MSA ecosystem.
+Distributed tracing server for monitoring and troubleshooting microservices in the MSA-Upgraded ecosystem.
 
 ## Overview
 

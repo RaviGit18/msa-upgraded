@@ -1,6 +1,6 @@
 # Employee Service
 
-A microservice for managing employee information and operations within the MSA ecosystem.
+A microservice for managing employee information and operations within the MSA-Upgraded ecosystem.
 
 ## Overview
 

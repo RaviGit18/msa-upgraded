@@ -1,7 +1,7 @@
-# MSA Project Upgrade Summary
+# MSA-Upgraded Project Upgrade Summary
 
 ## Overview
-Successfully upgraded the microservices architecture project from Spring Boot 1.5.2 to Spring Boot 3.2.5 with modern dependencies and practices.
+Successfully upgraded the MSA-Upgraded project from Spring Boot 1.5.2 to Spring Boot 3.2.5 with modern dependencies and practices.
 
 ## Location
 - **Original Project**: `E:\learning\workspaces\workspaces-0\msa`
