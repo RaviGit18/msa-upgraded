@@ -88,6 +88,8 @@ The project uses **H2 in-memory databases** - no external database setup require
 ## ⚠️ **IMPORTANT: Correct Startup Order**
 
 The order of starting applications is **CRITICAL** for proper dependency resolution. Here's the **CORRECT** sequence:
+<img width="1103" height="131" alt="image" src="https://github.com/user-attachments/assets/c52a9d19-bf12-47e7-8b31-51d78498d410" />
+
 
 ### **Phase 1: Infrastructure Services**
 1. **Eureka Naming Server** (Port 8761) - *Foundation for service discovery*
