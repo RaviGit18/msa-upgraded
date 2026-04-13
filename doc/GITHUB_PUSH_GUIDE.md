@@ -126,8 +126,8 @@ git add employee-payroll-service/
 git add role-service/
 git add eureka-naming-server/
 git add spring-cloud-config-server/
-git add zuul-edge-server/
-git add zipkin-tracing/
+git add spring-cloud-gateway-server/
+git add micrometer-tracing/
 git add *.md
 ```
 
@@ -440,8 +440,8 @@ msa-upgraded/
 ├── role-service/               # Role microservice
 ├── eureka-naming-server/       # Discovery server
 ├── spring-cloud-config-server/   # Config server
-├── zuul-edge-server/           # API gateway
-└── zipkin-tracing/            # Tracing service
+├── spring-cloud-gateway-server/  # API gateway
+└── micrometer-tracing/           # Tracing service
 ```
 
 ## GitHub Actions Integration (Optional)

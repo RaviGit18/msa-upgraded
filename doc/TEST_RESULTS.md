@@ -108,7 +108,7 @@ Successfully tested all upgraded microservices with Spring Boot 3.2.5, modern de
   - EMPLOYEE-SERVICE
   - ROLE-SERVICE
   - EMPLOYEE-PAYROLL-SERVICE
-  - ZUUL-EDGE-SERVER
+  - SPRING-CLOUD-GATEWAY-SERVER
 
 ## Inter-Service Communication
 

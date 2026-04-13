@@ -66,8 +66,8 @@ Successfully upgraded the microservices architecture project from Spring Boot 1.
 3. **eureka-naming-server** - Service discovery
 4. **role-service** - Role management
 5. **spring-cloud-config-server** - Configuration management
-6. **zipkin-tracing** - Distributed tracing
-7. **zuul-edge-server** - API gateway (now using Spring Cloud Gateway)
+6. **micrometer-tracing** - Distributed tracing
+7. **spring-cloud-gateway-server** - API gateway (now using Spring Cloud Gateway)
 
 ## Features Added
 

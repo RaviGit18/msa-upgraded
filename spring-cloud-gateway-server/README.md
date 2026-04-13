@@ -1,10 +1,10 @@
-# Zuul Edge Server
+# Spring Cloud Gateway Server
 
 API Gateway server providing routing, load balancing, and cross-cutting concerns for the MSA microservices ecosystem.
 
 ## Overview
 
-The Zuul Edge Server serves as the single entry point for all client requests, providing intelligent routing, load balancing, security, and monitoring capabilities across the microservices architecture.
+The Spring Cloud Gateway Server serves as the single entry point for all client requests, providing intelligent routing, load balancing, security, and monitoring capabilities across the microservices architecture.
 
 ## Features
 
@@ -21,11 +21,10 @@ The Zuul Edge Server serves as the single entry point for all client requests, p
 
 ## Technology Stack
 
-- **Spring Boot 1.5.2**
-- **Spring Cloud Zuul** - API Gateway
+- **Spring Boot 3.2.5**
+- **Spring Cloud Gateway** - API Gateway
 - **Spring Cloud Eureka** - Service discovery
-- **Spring Cloud Sleuth** - Distributed tracing
-- **Spring Cloud Hystrix** - Circuit breaker
+- **Micrometer Tracing** - Distributed tracing
 - **Spring Boot Actuator** - Monitoring endpoints
 - **Spring Boot DevTools** - Development tools
 
@@ -34,7 +33,7 @@ The Zuul Edge Server serves as the single entry point for all client requests, p
 ### Application Properties
 ```properties
 server.port=8765
-spring.application.name=zuul-edge-server
+spring.application.name=spring-cloud-gateway-server
 
 # Eureka Configuration
 eureka.client.service-url.defaultZone=http://localhost:8761/eureka/

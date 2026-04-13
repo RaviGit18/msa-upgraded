@@ -1,4 +1,4 @@
-# Zipkin Tracing
+# Micrometer Tracing
 
 Distributed tracing server for monitoring and troubleshooting microservices in the MSA ecosystem.
 
@@ -34,7 +34,7 @@ The Zipkin Tracing service provides distributed tracing capabilities, allowing y
 ### Application Properties
 ```properties
 server.port=9411
-spring.application.name=zipkin-tracing
+spring.application.name=micrometer-tracing
 
 # Zipkin Server Configuration
 zipkin.storage.type=mem
@@ -97,7 +97,7 @@ mvn spring-boot:run
 ### Production Build
 ```bash
 mvn clean package
-java -jar target/zipkin-tracing-0.0.1-SNAPSHOT.jar
+java -jar target/micrometer-tracing-0.0.1-SNAPSHOT.jar
 ```
 
 ### Docker Deployment
@@ -106,8 +106,8 @@ java -jar target/zipkin-tracing-0.0.1-SNAPSHOT.jar
 docker run -d -p 9411:9411 openzipkin/zipkin
 
 # Custom build
-docker build -t zipkin-tracing .
-docker run -d -p 9411:9411 zipkin-tracing
+docker build -t micrometer-tracing .
+docker run -d -p 9411:9411 micrometer-tracing
 ```
 
 ## Zipkin UI Features

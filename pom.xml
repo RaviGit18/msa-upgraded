@@ -17,8 +17,8 @@
         <module>eureka-naming-server</module>
         <module>role-service</module>
         <module>spring-cloud-config-server</module>
-        <module>zipkin-tracing</module>
-        <module>zuul-edge-server</module>
+        <module>micrometer-tracing</module>
+        <module>spring-cloud-gateway-server</module>
     </modules>
     
     <parent>

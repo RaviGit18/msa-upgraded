@@ -16,8 +16,8 @@ This project demonstrates a complete microservices ecosystem with service discov
 ### Infrastructure Services
 - **Eureka Naming Server** - Service discovery and registration
 - **Spring Cloud Config Server** - Centralized configuration management
-- **Zuul Edge Server** - API gateway for routing and load balancing
-- **Zipkin Tracing** - Distributed tracing and monitoring
+- **Spring Cloud Gateway Server** - API gateway for routing and load balancing
+- **Micrometer Tracing** - Distributed tracing and monitoring
 
 ### Security Services
 - **Spring Security App** - Basic authentication and authorization
@@ -31,8 +31,8 @@ This project demonstrates a complete microservices ecosystem with service discov
 - **Maven** - Build tool and dependency management
 - **H2 Database** - In-memory database for development
 - **Eureka** - Service discovery
-- **Zuul** - API gateway
-- **Zipkin** - Distributed tracing
+- **Spring Cloud Gateway** - API gateway
+- **Micrometer Tracing** - Distributed tracing
 - **Spring Security** - Authentication and authorization
 
 ## Project Structure
@@ -48,8 +48,8 @@ msa/
 ├── spring-cloud-config-server/       # Configuration server
 ├── spring-security-app/              # Basic security implementation
 ├── spring-security-ldap-app/         # LDAP security implementation
-├── zipkin-tracing/                   # Distributed tracing server
-└── zuul-edge-server/                 # API gateway
+├── micrometer-tracing/               # Distributed tracing server
+└── spring-cloud-gateway-server/      # API gateway
 ```
 
 ## Quick Start
@@ -83,8 +83,8 @@ mvn clean install -DskipTests
    cd ../spring-cloud-config-server
    mvn spring-boot:run
    
-   # Start Zipkin (optional)
-   cd ../zipkin-tracing
+   # Start Tracing (optional)
+   cd ../micrometer-tracing
    mvn spring-boot:run
    ```
 
@@ -105,7 +105,7 @@ mvn clean install -DskipTests
 
 3. **Start Gateway**:
    ```bash
-   cd ../zuul-edge-server
+   cd ../spring-cloud-gateway-server
    mvn spring-boot:run
    ```
 
@@ -114,8 +114,8 @@ mvn clean install -DskipTests
 Once all services are running, you can access:
 
 - **Eureka Dashboard**: http://localhost:8761
-- **Zuul Gateway**: http://localhost:8765
-- **Zipkin Dashboard**: http://localhost:9411
+- **Spring Cloud Gateway**: http://localhost:8765
+- **Micrometer Tracing Dashboard**: http://localhost:9411
 - **Config Server**: http://localhost:8888
 
 ## Development
@@ -151,7 +151,7 @@ mvn verify
 
 ## Monitoring and Tracing
 
-- **Zipkin** provides distributed tracing across microservices
+- **Micrometer Tracing** provides distributed tracing across microservices
 - **Spring Boot Actuator** endpoints expose health and metrics information
 - **Eureka** provides service discovery and health monitoring
 

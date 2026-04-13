@@ -32,7 +32,7 @@ Ensure the following ports are **available** before starting:
 | 8080 | Employee Service | Employee Management |
 | 8081 | Role Service | Role Management |
 | 8082 | Employee Payroll Service | Payroll Management |
-| 9090 | Zuul Edge Server (Gateway) | API Gateway |
+| 9090 | Spring Cloud Gateway Server (Gateway) | API Gateway |
 
 **Check port availability:**
 ```bash
@@ -63,8 +63,8 @@ dir /B
 # ├── role-service/
 # ├── eureka-naming-server/
 # ├── spring-cloud-config-server/
-# ├── zuul-edge-server/
-# └── zipkin-tracing/
+# ├── spring-cloud-gateway-server/
+# └── micrometer-tracing/
 ```
 
 #### 2. Maven Dependencies Check
@@ -283,15 +283,15 @@ curl -X POST http://localhost:8082/employee/1000/role/Dev
 **Why Last?** Gateway routes all external requests and provides single entry point.
 
 ```bash
-cd E:\learning\workspaces\workspaces-0\msa-upgraded\zuul-edge-server
+cd E:\learning\workspaces\workspaces-0\msa-upgraded\spring-cloud-gateway-server
 mvn spring-boot:run
 ```
 
 **Expected Output:**
 ```
 Netty started on port 9090
-DiscoveryClient_ZUUL-EDGE-SERVER - registration status: 204
-Started ZuulEdgeServerApplication in X seconds
+DiscoveryClient_SPRING-CLOUD-GATEWAY-SERVER - registration status: 204
+Started SpringCloudGatewayServerApplication in X seconds
 ```
 
 **Validation:**
@@ -470,7 +470,7 @@ cd role-service && mvn spring-boot:run
 cd employee-payroll-service && mvn spring-boot:run
 
 # Terminal 6 - Gateway
-cd zuul-edge-server && mvn spring-boot:run
+cd spring-cloud-gateway-server && mvn spring-boot:run
 ```
 
 ### Health Check Script
