@@ -163,11 +163,6 @@ mvn verify
 - **Spring Boot Actuator** endpoints expose health and metrics information
 - **Eureka** provides service discovery and health monitoring
 
-## Security
-
-- **Spring Security App** demonstrates basic form-based authentication
-- **Spring Security LDAP App** shows LDAP integration for enterprise authentication
-- All services are configured with basic security where applicable
 
 ## API Documentation
 
