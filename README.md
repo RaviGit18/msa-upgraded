@@ -28,15 +28,17 @@ This project demonstrates a complete microservices ecosystem with service discov
 
 ## Technology Stack
 
-- **Java 8**
-- **Spring Boot 1.5.2.RELEASE**
-- **Spring Cloud Dalston.RELEASE**
+- **Java 17**
+- **Spring Boot 3.2.5**
+- **Spring Cloud 2023.0.1**
 - **Gradle** - Build tool and dependency management
 - **H2 Database** - In-memory database for development
 - **Eureka** - Service discovery
 - **Spring Cloud Gateway** - API gateway
 - **Micrometer Tracing** - Distributed tracing
 - **Spring Security** - Authentication and authorization
+- **Resilience4j** - Circuit breaker pattern
+- **SpringDoc OpenAPI** - API documentation
 
 ### Technology Stack Diagram
 
@@ -47,7 +49,8 @@ This project demonstrates a complete microservices ecosystem with service discov
 
 ```
 msa-upgraded/
-├── pom.xml                           # Parent POM with common configuration
+├── build.gradle                      # Parent build configuration
+├── settings.gradle                   # Gradle settings
 ├── README.md                         # This file
 ├── employee-payroll-service/         # Payroll management service
 ├── employee-service/                 # Employee management service
