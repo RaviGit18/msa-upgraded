@@ -12,6 +12,9 @@ This project demonstrates a complete microservices ecosystem with service discov
 
 <img width="1702" height="932" alt="image" src="https://github.com/user-attachments/assets/e31a213f-c1b4-4d0a-aa23-aa597f62221e" />
 
+### System Architecture Overview
+<img width="1005" height="441" alt="image" src="https://github.com/user-attachments/assets/afc9978d-9a04-40d4-beaf-917964aa3564" />
+
 ### Core Services
 - **Employee Service** - Manages employee information and operations
 - **Employee Payroll Service** - Handles payroll calculations and management
@@ -37,7 +40,8 @@ This project demonstrates a complete microservices ecosystem with service discov
 
 ### Technology Stack Diagram
 
-<img width="1306" height="616" alt="image" src="https://github.com/user-attachments/assets/8ab7038d-0e28-469b-ab49-e7bd5f828e23" />
+<img width="1011" height="490" alt="image" src="https://github.com/user-attachments/assets/4bd2d5ef-6161-493b-a286-dbec1c99dea0" />
+
 
 ## Project Structure
 
@@ -53,9 +57,16 @@ msa-upgraded/
 ├── micrometer-tracing/               # Distributed tracing server
 └── spring-cloud-gateway-server/      # API gateway
 ```
+
+<img width="1745" height="731" alt="image" src="https://github.com/user-attachments/assets/f33adf97-aa58-4f69-b7c4-6e467ff3cc42" />
+
+
 ### Data Flow Diagram
 
 <img width="921" height="910" alt="image" src="https://github.com/user-attachments/assets/6499adb7-7cf2-458e-968e-1fef1606b944" />
+
+<img width="1123" height="883" alt="image" src="https://github.com/user-attachments/assets/056fb7de-c115-4050-aed6-da84cc0594a5" />
+
 
 ## Quick Start
 
@@ -76,8 +87,12 @@ msa-upgraded/
 ./gradlew clean build -x test
 ```
 
+### Gradle Build System Architecture
+<img width="1856" height="571" alt="image" src="https://github.com/user-attachments/assets/8b919851-6b0d-4d0c-8353-b5788e3163ca" />
+
 ### Running Services
-<img width="1103" height="131" alt="image" src="https://github.com/user-attachments/assets/c52a9d19-bf12-47e7-8b31-51d78498d410" />
+<img width="212" height="695" alt="image" src="https://github.com/user-attachments/assets/5421bb44-52f6-416f-b092-3ceaa9ae1986" />
+
 
 1. **Start Infrastructure Services** (in order):
    ```bash
@@ -161,11 +176,7 @@ Default credentials:
 - **Spring Boot Actuator** endpoints expose health and metrics information
 - **Eureka** provides service discovery and health monitoring
 
-## Security
-
-- **Spring Security App** demonstrates basic form-based authentication
-- **Spring Security LDAP App** shows LDAP integration for enterprise authentication
-- All services are configured with basic security where applicable
+<img width="989" height="876" alt="image" src="https://github.com/user-attachments/assets/0171f37d-d6c2-4d9f-87ae-22aa47886794" />
 
 ## API Documentation
 
