@@ -54,10 +54,14 @@ msa-upgraded/
 ├── micrometer-tracing/               # Distributed tracing server
 └── spring-cloud-gateway-server/      # API gateway
 ```
+<img width="1032" height="451" alt="image" src="https://github.com/user-attachments/assets/838ff99b-0a53-43b0-87f5-1f4243f7170f" />
 
 ### Data Flow Diagram
 
 <img width="921" height="910" alt="image" src="https://github.com/user-attachments/assets/6499adb7-7cf2-458e-968e-1fef1606b944" />
+
+<img width="1282" height="884" alt="image" src="https://github.com/user-attachments/assets/d4bb59a3-670c-4e44-8d1d-313e0b70b6c2" />
+
 
 ## Quick Start
 
@@ -79,7 +83,9 @@ mvn clean install -DskipTests
 ```
 
 ### Running Services
-<img width="1103" height="131" alt="image" src="https://github.com/user-attachments/assets/c52a9d19-bf12-47e7-8b31-51d78498d410" />
+
+#### Service Deployment Flow
+<img width="246" height="702" alt="image" src="https://github.com/user-attachments/assets/aa87b6ed-636d-486c-8123-116a72c3af62" />
 
 1. **Start Infrastructure Services** (in order):
    ```bash
@@ -162,6 +168,8 @@ mvn verify
 - **Micrometer Tracing** provides distributed tracing across microservices
 - **Spring Boot Actuator** endpoints expose health and metrics information
 - **Eureka** provides service discovery and health monitoring
+
+<img width="933" height="759" alt="image" src="https://github.com/user-attachments/assets/1f1b81b5-07b0-4d31-9583-a0814b5c7b77" />
 
 
 ## API Documentation
